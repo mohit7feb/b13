@@ -1,0 +1,407 @@
+#popupBox {
+    background: rgb(0 0 0 / 70%);
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+#popupBoxMsg {
+    width: 40%;
+    min-width: 300px;
+    height: auto;
+    min-height: 75px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 50px;
+    color: #d10505;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#popupBoxClose {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 265px;
+    background-color: #fff;
+    color: #151617;
+    flex-shrink: 10%;
+    border-bottom: 1px solid #e6e9eb;
+}
+
+.sectionformWrapper {
+    position: relative;
+    background-image: url(student-loans-hero.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1 1 0%;
+    min-height: calc(100vh - 60px);
+    padding-top: 30px;
+}
+
+.formContainerMain {
+    box-shadow: 0 4px 20px rgba(22, 27, 43, .06);
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    background: #fff;
+    max-width: none;
+    max-width: 796px;
+}
+
+.bankingoption {
+    width: 300px;
+    background-image: linear-gradient(-180deg, #fafafa 0%, #e4e4e4 99%);
+    border: 1px solid #b1b1b1;
+    font: 14px Arial !important;
+    color: #000;
+    padding: 0px 5px 0px 10px;
+    height: 28px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.formdropdown {
+    font-family: CharlesModernLight, CharlesModern-Light, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.formContainerMainSide {
+    width: 350px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 100%;
+    padding: 0px 25px;
+}
+
+.headingLogin {
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1.2;
+    min-height: 34px;
+    color: #333;
+    margin: 0px 50px 16px 50px;
+    font-family: CharlesModernLight, CharlesModern-Light, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+form label,
+form .formWrapperLabel {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    color: #151617;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+form .formWrapperInputDetailsMainInput {
+    height: 35px;
+    padding: 10px 12px;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 4px;
+    border: 1px solid #dde0e2;
+    display: flex;
+    justify-content: SPACE-BETWEEN;
+    align-items: center;
+}
+
+form input,
+form input:focus,
+form input:target,
+form input:active {
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.click_login_submit {
+    width: 100%;
+    height: 30px;
+    outline: none !important;
+    font-size: 16px;
+    margin-top: 30px;
+    padding: 5px 10px;
+    min-width: auto;
+    position: relative;
+    float: right;
+    font-weight: 400;
+    color: #fff;
+    background-color: #ed780f;
+    -webkit-font-smoothing: antialiased;
+    font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.2;
+    border-radius: 6px;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    vertical-align: middle;
+    text-shadow: 0 0 2px rgba(54, 28, 4, .95);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .3);
+    transition: all .2s ease-in-out;
+    user-select: none;
+    white-space-collapse: preserve;
+    text-wrap: nowrap;
+}
+
+.footerLoginLinks {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    color: #78838c;
+}
+
+.footerLoginLinks span {
+    color: #326ad5;
+    font-size: 14px;
+}
+
+.LoginFormOther {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 22px;
+    margin-top: 20px;
+}
+
+.LoginFormOtherText {
+    position: relative;
+    padding: 0 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #a7b2ba;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.LoginFormOther:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background-color: #edf0f3;
+}
+
+.socialWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 95px;
+}
+
+.iconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 4px;
+    border-radius: 50%;
+    background-color: #f7f8f9;
+}
+
+.socialText {
+    line-height: 16px;
+    font-size: 12px;
+    color: #78838c;
+    cursor: pointer;
+    text-align: center;
+}
+
+.formContainerSideQR {
+    width: 364px;
+    max-width: 100%;
+    margin-inline-start: 48px;
+    border-radius: 0 12px 12px 0;
+    border-left: 1px solid #edf0f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrLogin {
+    position: relative;
+    margin: 0 auto 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 48px;
+    gap: 10px;
+}
+
+.qrLogin img {
+    width: 140px;
+    height: 140px;
+}
+
+.qrLogin span.textQR {
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #151617;
+    font-weight: 400;
+    float: left;
+    width: 100%;
+}
+
+.sanQrSecText {
+    margin-bottom: 0;
+    line-height: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: #78838c;
+}
+
+.sanQrSecText span {
+    color: #326ad5;
+}
+
+.btnDown {
+    background: transparent;
+    border: 1px solid #dde0e2;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+    .sectionformWrapper {
+        height: auto;
+        min-height: auto;
+    }
+    .formContainerMain {
+        max-width: 100%;
+    }
+}
+
+a {
+    color: #000;
+    padding: 0.25rem 0;
+    text-decoration: underline;
+}
+
+span {
+    padding: 0 5px 0 5px;
+    color: #bebfbf;
+}
+
+.logoMain {
+    width: 185px;
+}
+
+.cmsmessagebox {
+    display: flex;
+    margin: 15px 10px;
+    background-color: #edf3f9;
+    border: 1px solid;
+    border-color: #037dae;
+    padding: 10px;
+}
+
+.cmsinfoicon {
+    width: 30px;
+}
+
+.cmsmessagetext {
+    font-size: 16px;
+    color: #000;
+}
+
+.cmsmessage {
+    color: #000;
+}
+
+.cmsmessagetext {
+    color: #06C;
+    text-decoration: none;
+}
+
+.formcheckbox01 {
+    display: flex;
+}
+
+.formchrckboxarea01 {
+    width: 10px;
+    height: 26px;
+    margin-right: 5px;
+}
+
+.formcheckboctext01 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    top: 3px;
+}
+
+.formWrapperLabel {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+
+.formwepperlablepassword0 {
+    letter-spacing: 0.5px;
+    color: #333;
+}
+
+.formcontainerfootersection {
+    margin: 0px 463px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    height: 76px;
+    padding: 10px 30px;
+}
+
+
+/*  footer  */
+
+footer {
+    width: 100%;
+}
+
+.footer1 {
+    background-image: url(image11.png);
+    background-repeat: repeat-x;
+}
